@@ -1,0 +1,16 @@
+
+services:
+  docker-recursive:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: docker-recursive
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - net
+
+networks:
+  net:
+    name: docker-recursive_net
