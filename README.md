@@ -12,3 +12,8 @@ Execute in the root directory of the project:
 ```sh
 make get-deeper
 ```
+### Get upper in a tree
+Execute inside a container:
+```sh
+exit
+```
